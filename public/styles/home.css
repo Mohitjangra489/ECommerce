@@ -1,0 +1,17 @@
+body{
+    background-image: url("4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 77vh;
+}
+#home{
+    float: right;
+    margin-right: 20px;
+    padding: 21px;
+    border: none;
+    border-radius: 299px;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: mintcream;
+}

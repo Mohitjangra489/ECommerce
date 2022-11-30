@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles/signup.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <form  id="form"method="POST" action = "/signup">
+            <h1 style=" margin-top: -53px;margin-left: 76px;">Signup Portal</h1>
+            <!-- <input placeholder="name"  name="name" required/> -->
+            <input placeholder="username" name="username" required/>
+            <input placeholder="Password"  name="password" type="password" required/>
+            <input placeholder="mobile" name = "mobile" required/>
+            <input placeholder="email" name="email"  required/>
+            <input id="submit" type="submit" value="Signup"/>
+        </form>
+    <a href="/login">
+    <input  type="submit" id="btn"  value="Login" />
+    </a>
+    <div id="error">
+    <%if(error){%>
+        <div style="color:white;position: absolute;font-family: cursive;
+        margin-top: 25px;">
+        <%=error %>
+        </div>
+        <%}%>
+    </div>
+    </div>
+</body>
+</html>
+

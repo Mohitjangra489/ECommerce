@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/styles/login.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+      
+    <form method="POST" action = "/login" id="form">
+        <h1 style=" margin-top: -53px;margin-left: 76px;">Login Portal</h1>
+        <input  placeholder="Username" name="username" required/>
+        <input  placeholder="Password"  name="password" required/>
+        <% if(!isvarified){%>
+          <%  console.log("login.ejs",isvarified);%>
+        <input  placeholder="OTP"  name="OTP"/>
+        <%}%>
+        <input  id="submit" type="submit" value="Login"/>
+        <a href="/update" style="margin-left: 100px;
+        color: red;
+        font-size: 13px;
+        margin-bottom: -353px;
+
+        position: absolute;">Change Password</a>
+    </form>
+    <a href="/signUp">
+    <input  type="submit" id="btn"  value="SignUp" />
+    </a>
+
+    <div id="error">
+    <%if(error){%>
+        <div style="position: absolute;
+        margin-top: 60px; color:white;font-family: cursive;">
+        <%=error %>
+        </div>
+        <%}%>
+    </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+button{
+    border: none;
+    height: 50px;
+    width:100px;
+    background-color: green;
+    color: white;
+  }
+  
+  
+  a{
+    text-decoration: none;
+  }
+  .container{
+    height:100px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
