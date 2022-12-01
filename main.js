@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
 
 app.get("/login", function (req, res) {
 
-    if (req.session.islogged === true && req.session.activeuser.isvarified === true) {
+    if (req.session.islogged === true && req.session.isvarified === true) {
         res.redirect("/");
     }
     else {
@@ -139,7 +139,7 @@ app.post("/login", function (req, res) {
 
 
 app.get("/signup", function (req, res) {
-    if (req.session.islogged === true && req.session.activeuser.isvarified === true) {
+    if (req.session.islogged === true && req.session.isvarified === true) {
         res.redirect("/");
     }
     else {
