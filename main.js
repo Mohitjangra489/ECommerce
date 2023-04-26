@@ -30,6 +30,8 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
+    proxy:true,
+    cookie:{secure:true,sameSite:"none"},
 }));
 
 
