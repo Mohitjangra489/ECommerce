@@ -1,5 +1,8 @@
 # ECommerce
 
+# About
+Built an E-commerce platform where we can sell and purchase products . It is an open source project. An e-commerce project is a software application that allows businesses to conduct online transactions, such as buying and selling products or services, through the internet. It typically includes a website or mobile application that provides a platform for customers to browse products, add them to a virtual shopping cart, and complete the purchase using various payment methods. The project is built using the latest technologies such as Node.js for the back-end and MongoDB as the database.
+
 # Screenshots of this project
 
 <h2>Login Page</h2>
